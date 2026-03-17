@@ -53,9 +53,27 @@
 
         .project-reverse { grid-template-columns: 1fr 1.4fr; }
 
-        .project-image { border-radius: 12px; overflow: hidden; cursor: pointer; box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
-        .project-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; display: block; }
+        /* ======== LA CORRECTION CSS POUR L'IMAGE EST ICI ======== */
+        .project-image {
+            border-radius: 12px;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+            height: 350px; /* Force une hauteur fixe pour toutes les images */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(0,0,0,0.2);
+        }
+        .project-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Recadre l'image proprement sans l'écraser */
+            transition: transform 0.5s ease;
+            display: block;
+        }
         .project-image:hover img { transform: scale(1.08); }
+        /* ======================================================== */
 
         .tech-badges { display: flex; flex-wrap: wrap; gap: 0.6rem; margin-top: 1.2rem; }
         .badge {
@@ -137,7 +155,7 @@
                 </div>
             </div>
             <div class="project-image">
-                <img src="{{ asset('images/image_72259d.png') }}" alt="Interface IONOS - Domaine et PHP 8.4" class="zoomable">
+                <img src="{{ asset('images/CadreDeTravail.PNG') }}" alt="Café Crème - Cadre de travail" class="zoomable">
             </div>
         </div>
 
@@ -151,7 +169,7 @@
 
         <div class="project-item reveal">
             <div class="project-image">
-                <img src="{{ asset('images/image_72257e.png') }}" alt="Base de données MySQL" class="zoomable">
+                <img src="{{ asset('images/Reservation.PNG') }}" alt="Système de réservation PHP/MySQL" class="zoomable">
             </div>
             <div class="project-text">
                 <h3 style="color: var(--accent); margin-bottom: 1rem;">Système de réservation automatisé</h3>
@@ -166,7 +184,7 @@
 
         <div class="project-item project-reverse reveal">
             <div class="project-image">
-                <img src="{{ asset('images/image_72923a.png') }}" alt="Transfert FileZilla" class="zoomable">
+                <img src="{{ asset('images/Fillzila.png') }}" alt="Transfert FileZilla" class="zoomable">
             </div>
             <div class="project-text">
                 <h3 style="color: var(--accent); margin-bottom: 1rem;">Mise en production sécurisée</h3>
@@ -181,7 +199,7 @@
 
         <div class="project-item reveal">
             <div class="project-image">
-                <img src="{{ asset('images/image_7225a0.png') }}" alt="Arborescence Serveur" class="zoomable">
+                <img src="{{ asset('images/MVC.PNG') }}" alt="Architecture MVC" class="zoomable">
             </div>
             <div class="project-text">
                 <h3 style="color: var(--accent); margin-bottom: 1rem;">Administration et Architecture MVC</h3>
@@ -219,7 +237,6 @@
         document.addEventListener("DOMContentLoaded", function() {
             const reveals = document.querySelectorAll('.reveal');
 
-            // On configure l'observateur pour déclencher l'animation quand l'élément est à 15% visible
             const revealOptions = {
                 threshold: 0.15,
                 rootMargin: "0px 0px -50px 0px"
@@ -229,7 +246,6 @@
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         entry.target.classList.add('active');
-                        // On arrête d'observer l'élément une fois qu'il est apparu
                         observer.unobserve(entry.target);
                     }
                 });
@@ -247,7 +263,6 @@
         const prevBtn = document.querySelector('.modal-prev');
         const nextBtn = document.querySelector('.modal-next');
 
-        // On sélectionne toutes les images avec la classe zoomable
         const images = document.querySelectorAll('.zoomable');
         let currentIndex = 0;
 
@@ -257,7 +272,7 @@
                 modalImg.src = img.src;
                 modalImg.alt = img.alt;
                 modal.classList.add('active');
-                document.body.style.overflow = 'hidden'; // Empêche le scroll derrière l'image
+                document.body.style.overflow = 'hidden';
             });
         });
 
@@ -280,12 +295,10 @@
         prevBtn.addEventListener('click', showPrevImage);
         nextBtn.addEventListener('click', showNextImage);
 
-        // Fermer en cliquant à côté de l'image
         modal.addEventListener('click', (e) => {
             if (e.target === modal) closeModal();
         });
 
-        // Navigation au clavier
         document.addEventListener('keydown', (e) => {
             if (!modal.classList.contains('active')) return;
             if (e.key === 'Escape') closeModal();
