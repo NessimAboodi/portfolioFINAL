@@ -33,3 +33,8 @@ Route::get('/experiences/stage2', function () {
 Route::get('/contact', function () {
     return view('pages.contact');
 });
+
+
+Route::get('/projets', function () {
+    return view('pages.projects'); // <-- Mettre un "c" ici pour correspondre au fichier
+});

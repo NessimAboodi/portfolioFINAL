@@ -27,14 +27,13 @@
                 <li><a href="{{ url('/projets') }}" class="{{ request()->is('projets') ? 'active' : '' }}">Projets</a></li>
                 <li><a href="{{ url('/veille') }}" class="{{ request()->is('veille') ? 'active' : '' }}">Veille</a></li>
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle {{ request()->is('experiences/*') ? 'active' : '' }}" onclick="return false;">
-                        <span>Expériences</span>
-                        <span class="dropdown-arrow" aria-hidden="true">▼</span>
+                    <a href="#" class="dropdown-toggle {{ request()->is('experiences/*') ? 'active' : '' }}" onclick="return false;" style="display: flex; align-items: center; gap: 5px;">
+                        Expériences
+                        <span class="dropdown-arrow" aria-hidden="true" style="font-size: 0.8em; margin-top: 2px;">▼</span>
                     </a>
                     <div class="dropdown-menu">
                         <a href="{{ url('/experiences/stages') }}">Stage 1 - Espace Mobile</a>
                         <a href="{{ url('/experiences/stage2') }}">Stage 2 - Café Crème</a>
-                        <a href="{{ url('/experiences/projets') }}">Projets professionnels</a>
                     </div>
                 </li>
                 <li><a href="{{ url('/contact') }}" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a></li>
