@@ -29,6 +29,18 @@
             <p style="color: var(--accent); font-size: 1.1rem; margin: 0; font-weight: bold;">06 56 68 99 21</p>
         </a>
 
+        <a href="/Documents/CV_Nessim_Aboodi.pdf" target="_blank" class="card" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s; border: 1px solid var(--accent);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            <h3 style="color: var(--muted); font-size: 1.1rem; margin-bottom: 0.5rem; font-weight: normal;">Mon CV</h3>
+            <p style="color: var(--accent); font-size: 1.1rem; margin: 0; font-weight: bold;">Consulter / Télécharger</p>
+        </a>
+
         <a href="https://www.linkedin.com/in/nessim-aboodi-48a9aa38a/" target="_blank" class="card" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s;">
             <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 1rem;">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>

@@ -89,11 +89,11 @@
                 <div class="card" style="margin-bottom: 2.5rem; position: relative;">
                     <div style="position: absolute; left: -31px; top: 20px; width: 20px; height: 20px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 10px var(--accent);"></div>
                     <div style="display: flex; gap: 1rem; align-items: flex-start;">
-                        <img src="/Images/company-logo.png" alt="Stage" style="width: 55px; height: 55px; object-fit: contain; background: white; border-radius: 8px;">
+                        <img src="/Images/cafecremelogo.PNG" alt="Stage" style="width: 55px; height: 55px; object-fit: contain; background: white; border-radius: 8px;">
                         <div>
                             <h4 style="margin: 0; font-size: 1.2rem; color: #fff;">Stage Développeur Web</h4>
-                            <p style="color: var(--accent); font-weight: 600; margin: 0.2rem 0;">[Nom Entreprise]</p>
-                            <p class="muted" style="font-size: 0.9rem;">Janvier - Février 2024</p>
+                            <p style="color: var(--accent); font-weight: 600; margin: 0.2rem 0;">Café Crème</p>
+                            <p class="muted" style="font-size: 0.9rem;">Janvier - Février 2025-2026</p>
                         </div>
                     </div>
                 </div>
@@ -104,8 +104,8 @@
                         <img src="/Images/company-logo.png" alt="Stage" style="width: 55px; height: 55px; object-fit: contain; background: white; border-radius: 8px;">
                         <div>
                             <h4 style="margin: 0; font-size: 1.2rem; color: #fff;">Stage Informatique</h4>
-                            <p style="color: var(--muted); font-weight: 600; margin: 0.2rem 0;">[Nom Entreprise]</p>
-                            <p class="muted" style="font-size: 0.9rem;">Mai - Juin 2023</p>
+                            <p style="color: var(--muted); font-weight: 600; margin: 0.2rem 0;">Espace Mobile</p>
+                            <p class="muted" style="font-size: 0.9rem;">Mai - Juin 2025</p>
                         </div>
                     </div>
                 </div>
